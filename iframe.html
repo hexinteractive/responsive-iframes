@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+  <title>The Iframe Content</title>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,900' rel='stylesheet' type='text/css'>
+  <!-- <link rel="stylesheet" href="style.css" type="text/css" /> -->
+  <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script> -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+
+  <!-- <script type="text/javascript" src="../jq/jquery-1.8.2.js"></script> -->
+  <script type="text/javascript" src="iframe-jcode.js"></script>
+  <style>
+
+
+html,
+body {
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+
+html {
+  background-image: url('bg-grid.gif');
+  background-repeat: repeat;
+  /*pointer-events: none;*/ /*not needed at least for FF26*/
+}
+
+body {
+  font-family: 'Roboto',helvetica,arial,verdana,sans-serif;
+  color:#58FFB3;
+  background: #222;
+  /*margin: 0 4em;*/
+  pointer-events: auto;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 1.2;
+  padding: 0.25em  0.5em;
+  margin: 0;
+  position: relative;
+
+/*  margin: 0 4em;*/
+  background: #222;
+}
+
+h1:hover {
+  outline: 1px dotted deeppink;
+}
+
+body.clickthrough  {
+  margin: 0 8em;
+  background: transparent;
+}
+
+
+  </style>
+</head>
+<body class="clickthrough">
+<h1>All I want to be is someone that makes new things and thinks about them
+<select name="select">
+  <option value="value0">SELECT BOX: </option>
+  <option value="value1">this requires</option>
+  <option value="value2">nothing special</option>
+  <option value="value3">its already</option>
+  <option value="value4">a windowed element</option>
+</select>
+</h1>
+<a href="#" target="_blank" rel="self">open iframe content in new tab</a>
+</body>
+</html>
